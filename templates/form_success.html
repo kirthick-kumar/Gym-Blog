@@ -1,0 +1,27 @@
+{% include 'header.html' %}
+<body class="text-center">
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('static/assets/img/contact-bg.jpg')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="page-heading">
+                    <h1>Contact Me</h1>
+                    <span class="subheading">Form Sent Successfully.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<img class="mb-4" src="static/assets/dumbbell-icon.png" alt="" width="72" height="72">
+<h1 class="mb-3 font-weight-normal"> Successfully Sent:</h1>
+<p>Name: {{ name }}</p>
+<p>Email: {{ email }}</p>
+<p>Phone: {{ phone }}</p>
+<p>Message: {{ msg }}</p>
+<br>
+<h4>Go Back to Home:</h4>
+<button class="btn btn-lg btn-primary btn-block mt-3 mb-5" onclick="window.location.href = '{{ url_for('get_all_posts') }}';">Home</button>
+</body>
+<!-- Footer-->
+{% include 'footer.html' %}
